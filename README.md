@@ -37,6 +37,27 @@ A robust Java application demonstrating **Object-Oriented Programming (OOP)** pr
     * Layout Managers
 
 ---
+## 🧬 Project Structure
+
+Here's an overview of the project's file organization:
+
+```bash
+OOP_Project_2026/
+├── src/
+│   ├── interfaces/
+│   │   └── Drawable.java       # Interface defining common behavior (draw, getArea)
+│   │
+│   ├── Circle.java             # Concrete class representing a 2D Circle
+│   ├── Cube.java               # Concrete class representing a 3D Cube
+│   │
+│   ├── DrawingPanel.java       # Custom JPanel logic for dynamic rendering & scrolling
+│   └── MainMenu.java           # Main entry point (GUI Dashboard & File Handling)
+│
+├── assets/                     # Images and GIFs used in this README
+├── input.txt                   # Sample input file for testing
+├── sumAreas.txt                # print sum of all shapes areas
+└── README.md                   # Project documentation
+```
 
 ## 🚀 How to Run
 
