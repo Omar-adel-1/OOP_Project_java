@@ -8,7 +8,7 @@ A robust Java application demonstrating **Object-Oriented Programming (OOP)** pr
 
 ---
 
-## ✨ Key Features
+## 📌 Key Features
 
 * **Dynamic Visualization:**
     * Shapes are drawn on a custom `DrawingPanel`.
