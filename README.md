@@ -1,41 +1,81 @@
-# Object Oriented Programming Project - Assiut University
+# 🎨 OOP Shapes Project
 
-## Project Overview
-[cite_start]This project is an Object Oriented Programming assignment for the Faculty of Computers & Information at Assiut University[cite: 2, 3]. [cite_start]The objective is to convert a specific UML diagram into Java classes and implement a driver program that handles file I/O and GUI visualization[cite: 4, 12].
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+![Swing](https://img.shields.io/badge/GUI-Swing-blue?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Stable%20v1.0-green?style=for-the-badge)
 
-## Class Structure
-[cite_start]The project implements the following class hierarchy based on the provided UML design[cite: 4]:
+A robust Java application demonstrating **Object-Oriented Programming (OOP)** principles. This project allows users to load geometric shape data from files, visualize them dynamically on a responsive interface, and perform calculations like surface area reporting.
 
-### Interface
-* [cite_start]**`Drawable`**: Defines the contract for drawable objects with the method `howToDrwa()`[cite: 14, 15].
+---
 
-### Abstract/Base Class
-* [cite_start]**`Shape`**: Represents a generic shape[cite: 16].
-    * [cite_start]**Attributes**: `dateCreated` (Date), `color` (String)[cite: 17, 18].
-    * [cite_start]**Methods**: `getArea()`, `getPerimeter()`, `getDateCreated()`[cite: 19, 20, 21].
+## ✨ Key Features
 
-### Concrete Classes
-* **`Circle`** (Extends `Shape`):
-    * [cite_start]**Attributes**: `raduis` (double)[cite: 25].
-    * [cite_start]**Methods**: Includes getters, setters, and `toString()` implementation[cite: 26, 27, 28].
-* **`ThreeDShape`** (Extends `Shape`):
-    * [cite_start]**Methods**: Adds functionality for 3D calculations like `getVolume()`[cite: 32, 33].
-* **`Cube`** (Extends `ThreeDShape`):
-    * [cite_start]**Attributes**: `side` (double)[cite: 35].
-    * [cite_start]**Methods**: Includes getters, setters, and `toString()` implementation[cite: 36, 37, 38].
+* **Dynamic Visualization:**
+    * Shapes are drawn on a custom `DrawingPanel`.
+    * **Responsive Layout:** Shapes automatically wrap to new lines and center themselves based on the window size.
+    * **Scroll Support:** Handles large numbers of shapes using a smooth scroll view.
+* **File Processing:**
+    * Parses text files to load shape data (Circles, Cubes, etc.).
+    * Generates and saves detailed text reports for area calculations.
+* **OOP Design:**
+    * Utilizes **Polymorphism** and **Interfaces** (`Drawable`) to manage different shapes uniformly.
+    * Clean separation of concerns between Logic and GUI.
+* **User Interface:**
+    * Interactive Dashboard with options to Load, Calculate, Save, and View.
+    * Real-time feedback and validation messages.
 
-## Features & Functionality
+---
 
-### 1. Data Processing
-[cite_start]The application creates an array of `Drawable` objects (minimum size 2) populated via file input[cite: 5].
+## 🛠️ Technologies Used
 
-### 2. File Input (`input.txt`)
-[cite_start]The program reads from a file named `input.txt` to instantiate shapes[cite: 7]. The file format is as follows:
-* **Line 1**: Number of shapes (Array size).
-* **Subsequent Lines**: The shape type followed by its dimension.
+* **Language:** Java (JDK 17+)
+* **GUI Framework:** Java Swing (JFrame, JPanel, Graphics)
+* **Concepts:**
+    * Inheritance & Polymorphism
+    * Interfaces (`Drawable`)
+    * File I/O (Reading/Writing streams)
+    * Layout Managers
 
-**Example Input:**
+---
+
+## 🚀 How to Run
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/0xezzdev/OOP_Project_2026.git
+    ```
+2.  **Open in IDE:**
+    * Open IntelliJ IDEA (or Eclipse/NetBeans).
+    * Import the project folder.
+3.  **Run the App:**
+    * Locate the `Main.java` file.
+    * Right-click and select **Run**.
+
+---
+
+## 📝 Input File Format
+
+To test the application, create a text file (e.g., `shapes.txt`) with the following format (adjust based on your parser logic):
+
 ```text
-2
-circle 22.5
-cube 23.6
+Circle 50
+Cube 100
+Circle 75
+Cube 60
+```
+---
+
+## 🔮 Future Improvements
+1.  **Add support for more shapes (Triangles, Rectangles).**
+  
+2.  **Implement color customization for each shape.**
+    
+3.  **Database integration for saving shape history.**
+
+---
+
+## 👤 Author
+* **Omar Adel Abouzeid**
+
+---
+
