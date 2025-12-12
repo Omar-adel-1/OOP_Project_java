@@ -44,9 +44,7 @@ Here's an overview of the project's file organization:
 ```bash
 OOP_Project_2026/
 ├── src/
-│   ├── interfaces/
-│   │   └── Drawable.java       # Interface defining common behavior (draw, getArea)
-│   │
+│   ├── Drawable.java           # Interface defining common behavior (draw, getArea)
 │   ├── Circle.java             # Concrete class representing a 2D Circle
 │   ├── Cube.java               # Concrete class representing a 3D Cube
 │   │
