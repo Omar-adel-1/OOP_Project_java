@@ -8,25 +8,25 @@ A robust Java application demonstrating **Object-Oriented Programming (OOP)** pr
 
 ---
 
-## 📌 Key Features
+## 🔑 Key Features
 
-* **Dynamic Visualization:**
+* **📌Dynamic Visualization:**
     * Shapes are drawn on a custom `DrawingPanel`.
     * **Responsive Layout:** Shapes automatically wrap to new lines and center themselves based on the window size.
     * **Scroll Support:** Handles large numbers of shapes using a smooth scroll view.
-* **File Processing:**
+* **📌File Processing:**
     * Parses text files to load shape data (Circles, Cubes, etc.).
     * Generates and saves detailed text reports for area calculations.
-* **OOP Design:**
+* **📌OOP Design:**
     * Utilizes **Polymorphism** and **Interfaces** (`Drawable`) to manage different shapes uniformly.
     * Clean separation of concerns between Logic and GUI.
-* **User Interface:**
+* **📌User Interface:**
     * Interactive Dashboard with options to Load, Calculate, Save, and View.
     * Real-time feedback and validation messages.
 
 ---
 
-## 🛠️ Technologies Used
+## ⚙️ Technologies Used
 
 * **Language:** Java (JDK 17+)
 * **GUI Framework:** Java Swing (JFrame, JPanel, Graphics)
@@ -75,7 +75,7 @@ Cube 60
 ---
 
 ## 👤 Author
-* **Omar Adel Abouzeid**
+* **📌Omar Adel Abouzeid**
 
 ---
 
