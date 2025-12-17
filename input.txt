@@ -1,6 +1,5 @@
-5
-circle 50
-cube 180
-circle 150
-circle 30
-cube 120
+4
+cUbe 6
+circle -10
+cube 4
+cube 2

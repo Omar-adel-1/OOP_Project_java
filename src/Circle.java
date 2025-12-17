@@ -3,12 +3,10 @@ import java.awt.*;
 public class Circle extends Shape{
 
     private double radius;
-    private Color myColor;
 
 
     public Circle(double radius)
     {
-        this.myColor = new Color((int)(Math.random() * 0x1000000));
         this.radius=radius;
     }
 
@@ -32,16 +30,9 @@ public class Circle extends Shape{
         return radius;
     }
 
-    public void setRedius(double radius)
+    public void setRadius(double radius)
     {
-        if(radius<=0)
-        {
-            System.err.println("Invalid radius");
-        }
-        else
-        {
-            this.radius = radius;
-        }
+        this.radius = radius;
     }
 
     @Override
@@ -53,8 +44,11 @@ public class Circle extends Shape{
 
     @Override
     public void drawShape(Graphics g, int x, int y) {
-        g.setColor(Color.gray);
 
+        if(this.radius<=0)
+        {
+            System.err.println("Invalid radius");
+        }
         int dim = (int) (radius*2);
         g.fillOval(x,y,dim,dim);
     }

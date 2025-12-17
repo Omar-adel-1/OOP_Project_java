@@ -29,12 +29,12 @@ public  class Main {
                String typeOfShape=in.next();
                double value =in.nextDouble();
 
-               if(typeOfShape.equals("circle"))
+               if(typeOfShape.equalsIgnoreCase("circle"))
                {
                    shapes[i]=new Circle(value);
                    sum+=((Shape) shapes[i]).getArea();
                }
-               else if(typeOfShape.equals("cube"))
+               else if(typeOfShape.equalsIgnoreCase("cube"))
                {
                    shapes[i]=new Cube(value);
                    sum+=((Shape) shapes[i]).getArea();
@@ -42,7 +42,7 @@ public  class Main {
                else
                {
                    System.err.println("Invalid shape !");
-                   i--;
+
                }
 
            }
@@ -80,7 +80,7 @@ public  class Main {
 
         frame.add(scrollPane, BorderLayout.CENTER);
 
-        frame.setSize(1000, 800);
+        frame.setSize(1200, 800);
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }

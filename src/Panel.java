@@ -58,7 +58,7 @@ public class Panel extends JPanel {
         super.paintComponent(g);
 
         int xAxes = SPACE;
-        int yAxes = 100;
+        int yAxes = 70;
 
         int currentPanelWidth = getWidth();
 

@@ -1,3 +1,4 @@
+import java.awt.*;
 import java.util.Date;
 
 public abstract class Shape implements Drawable {
@@ -11,7 +12,10 @@ public abstract class Shape implements Drawable {
         return "";
     }
 
-    public Shape(){}
+    public Shape(){
+         this.dateCreated =null;
+         this.color = "Black";
+    }
     public Shape(String color)
     {
         this.color = color;
