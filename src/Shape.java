@@ -6,7 +6,7 @@ public abstract class Shape implements Drawable {
     private String color;
 
     @Override
-    public String howToDrwa()
+    public String howToDraw()
     {
         return "";
     }

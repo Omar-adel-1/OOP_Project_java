@@ -15,9 +15,10 @@ public  class Main {
        try {
            File readFromFile=new File("input.txt");
            Scanner in = new Scanner(readFromFile);
+          // Scanner in =new Scanner(System.in);
 
            PrintWriter printWriter = new PrintWriter("sumAreas.txt");
-           printWriter.print("Summmmm Of Areas = ");
+           printWriter.print("Sum Of Areas = ");
 
            double sum=0;
 
@@ -62,10 +63,10 @@ public  class Main {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setResizable(true);
         frame.setLayout(new BorderLayout());
-        frame.setBackground(Color.WHITE);
+        frame.setBackground(Color.lightGray);
 
-        JLabel titleLabel = new JLabel(" Omar`s OOP Project !");
-        titleLabel.setFont(new Font("Arial", Font.BOLD, 36));
+        JLabel titleLabel = new JLabel(" Omar Adel`s OOP Project !");
+        titleLabel.setFont(new Font("Arial", Font.ITALIC, 25));
         titleLabel.setHorizontalAlignment(JLabel.CENTER);
         frame.add(titleLabel, BorderLayout.NORTH);
 
@@ -79,7 +80,7 @@ public  class Main {
 
         frame.add(scrollPane, BorderLayout.CENTER);
 
-        frame.setSize(1000, 700);
+        frame.setSize(1000, 800);
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }

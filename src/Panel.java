@@ -73,7 +73,7 @@ public class Panel extends JPanel {
 
                 int yOffset = (ROW_HEIGHT - shapeSize) / 2;
 
-                shape.drowShape(g, xAxes, yAxes + yOffset);
+                shape.drawShape(g, xAxes, yAxes + yOffset);
 
                 xAxes += shapeSize + SPACE;
             }
@@ -82,7 +82,7 @@ public class Panel extends JPanel {
 
     private int getShapeSize(Drawable shape) {
         if (shape instanceof Circle) {
-            return (int) (((Circle) shape).getRaduis() * 2);
+            return (int) (((Circle) shape).getRadius() * 2);
         } else if (shape instanceof Cube) {
             return (int) ((Cube) shape).getSide();
         } else {

@@ -3,6 +3,7 @@ import java.awt.*;
 public class Cube extends ThreeDShape {
 
     private double side;
+    private Color myColor;
 
     public Cube(double side)
     {
@@ -19,6 +20,7 @@ public class Cube extends ThreeDShape {
 
     public void setSide(double side)
     {
+        this.myColor = new Color((int)(Math.random() * 0x1000000));
         this.side = side;
     }
 
@@ -48,7 +50,9 @@ public class Cube extends ThreeDShape {
     }
 
     @Override
-    public void drowShape(Graphics g, int x, int y) {
+    public void drawShape(Graphics g, int x, int y) {
+        g.setColor(Color.BLACK);
+
         int side=(int)this.side;
         int offset =side / 3;
 

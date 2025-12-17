@@ -2,48 +2,60 @@ import java.awt.*;
 
 public class Circle extends Shape{
 
-    private double raduis;
+    private double radius;
+    private Color myColor;
 
-    public Circle(double raduis)
+
+    public Circle(double radius)
     {
-        this.raduis=raduis;
+        this.myColor = new Color((int)(Math.random() * 0x1000000));
+        this.radius=radius;
     }
 
-    public Circle(String color,double raduis){
+    public Circle(String color,double radius){
         super(color);
-        this.raduis=raduis;
+        this.radius=radius;
     }
 
     @Override
     public double getArea() {
-       return Math.PI*raduis*raduis;
+       return Math.PI*radius*radius;
     }
 
     @Override
     public double getPerimeter() {
-        return 2*Math.PI*raduis;
+        return 2*Math.PI*radius;
     }
 
-    public double getRaduis()
+    public double getRadius()
     {
-        return raduis;
+        return radius;
     }
 
-    public void setReduis(double raduis)
+    public void setRedius(double radius)
     {
-        this.raduis = raduis;
+        if(radius<=0)
+        {
+            System.err.println("Invalid radius");
+        }
+        else
+        {
+            this.radius = radius;
+        }
     }
 
     @Override
     public String toString() {
         return "Circle{" +
-                "reduis=" + raduis +
+                "reduis=" + radius +
                 '}';
     }
 
     @Override
-    public void drowShape(Graphics g, int x, int y) {
-        int dim = (int) (raduis*2);
+    public void drawShape(Graphics g, int x, int y) {
+        g.setColor(Color.gray);
+
+        int dim = (int) (radius*2);
         g.fillOval(x,y,dim,dim);
     }
 }

@@ -1,1 +1,1 @@
-Summmmm Of Areas = 1741436.2426110073
+Sum Of Areas = 362167.24972797564
