@@ -13,8 +13,8 @@ public abstract class Shape implements Drawable {
     }
 
     public Shape(){
-         this.dateCreated =null;
-         this.color = "Black";
+        this.dateCreated =new Date();
+        this.color = "red";
     }
     public Shape(String color)
     {

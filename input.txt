@@ -1,5 +1,5 @@
 4
-cUbe 6
-circle -10
-cube 4
-cube 2
+cUbe 50
+circle 75
+cube 60
+circle 100

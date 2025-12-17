@@ -14,7 +14,6 @@ public class Cube extends ThreeDShape {
     }
     public double getSide()
     {
-
         return side;
     }
 
@@ -25,7 +24,7 @@ public class Cube extends ThreeDShape {
     }
 
     @Override
-    public double getVolum()
+    public double getVolume()
     {
         return side * side * side;
     }

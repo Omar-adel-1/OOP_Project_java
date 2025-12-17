@@ -1,6 +1,6 @@
 public abstract class ThreeDShape extends Shape{
 
-    public abstract double getVolum();
+    public abstract double getVolume();
 
     public ThreeDShape(){}
 
