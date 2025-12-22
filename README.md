@@ -1,95 +1,58 @@
-# 🎨 OOP Shapes Project
+# 🧊 3D Geometric Visualization System (v2.0)
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
 ![Swing](https://img.shields.io/badge/GUI-Swing-blue?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Stable%20v1.0-green?style=for-the-badge)
+![Status](https://img.shields.io/badge/Release-v2.0-purple?style=for-the-badge)
 
-A robust Java application demonstrating **Object-Oriented Programming (OOP)** principles. This project allows users to load geometric shape data from files, visualize them dynamically on a responsive interface, and perform calculations like surface area reporting.
-
----
-
-## 🔑 Key Features
-
-* **📌Dynamic Visualization:**
-    * Shapes are drawn on a custom `DrawingPanel`.
-    * **Responsive Layout:** Shapes automatically wrap to new lines and center themselves based on the window size.
-    * **Scroll Support:** Handles large numbers of shapes using a smooth scroll view.
-* **📌File Processing:**
-    * Parses text files to load shape data (Circles, Cubes, etc.).
-    * Generates and saves detailed text reports for area calculations.
-* **📌OOP Design:**
-    * Utilizes **Polymorphism** and **Interfaces** (`Drawable`) to manage different shapes uniformly.
-    * Clean separation of concerns between Logic and GUI.
-* **📌User Interface:**
-    * Interactive Dashboard with options to Load, Calculate, Save, and View.
-    * Real-time feedback and validation messages.
+An advanced version of the OOP Shapes project, featuring **simulated 3D rendering** and **gradient shading** for a realistic visualization experience. This version introduces complex shapes like Cones and Spheres with a monochromatic aesthetic.
 
 ---
 
-## ⚙️ Technologies Used
+## 🚀 What's New in v2.0?
 
-* **Language:** Java (JDK 17+)
-* **GUI Framework:** Java Swing (JFrame, JPanel, Graphics)
-* **Concepts:**
-    * Inheritance & Polymorphism
-    * Interfaces (`Drawable`)
-    * File I/O (Reading/Writing streams)
-    * Layout Managers
-
----
-## 🧬 Project Structure
-
-Here's an overview of the project's file organization:
-
-```bash
-OOP_Project_2026/
-├── src/
-│   ├── Drawable.java           # Interface defining common behavior (draw, getArea)
-│   ├── Circle.java             # Concrete class representing a 2D Circle
-│   ├── Cube.java               # Concrete class representing a 3D Cube
-│   │
-│   ├── DrawingPanel.java       # Custom JPanel logic for dynamic rendering & scrolling
-│   └── MainMenu.java           # Main entry point (GUI Dashboard & File Handling)
-│
-├── assets/                     # Images and GIFs used in this README
-├── input.txt                   # Sample input file for testing
-├── sumAreas.txt                # print sum of all shapes areas
-└── README.md                   # Project documentation
-```
-
-## 🚀 How to Run
-
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/Omar-adel-1/OOP_Project_java.git
-    ```
-2.  **Open in IDE:**
-    * Open IntelliJ IDEA (or Eclipse/NetBeans).
-    * Import the project folder.
-3.  **Run the App:**
-    * Locate the `Main.java` file.
-    * Right-click and select **Run**.
+* **🔮 3D Shape Support:**
+    * **Spheres:** Rendered with radial gradient shading to simulate depth and lighting.
+    * **Cones:** Implemented with linear gradients and oval bases for a realistic 3D look.
+    * **Solid Cubes:** Now rendered with shaded faces (Top, Front, Side) instead of wireframes.
+* **🎨 Visual Upgrade:**
+    * **Monochromatic Theme:** A sleek Black & White design with metallic gradients.
+    * **Lighting Simulation:** Highlights and shadows applied to all shapes.
+* **🛡️ Robust Error Handling:**
+    * Automatically detects and skips invalid inputs (e.g., negative dimensions) without crashing.
 
 ---
 
-## 📝 Input File Format
+## 🛠️ Updated Class Structure
 
-To test the application, create a text file (e.g., `shapes.txt`) with the following format (adjust based on your parser logic):
+| Class | Type | Description |
+| :--- | :--- | :--- |
+| `Sphere` | 3D Shape | Uses `RadialGradientPaint` for 3D lighting effects. |
+| `Cone` | 3D Shape | Uses `LinearGradientPaint` and polygon mapping. |
+| `Cube` | 3D Shape | Draws 3 distinct faces with different gray levels for depth. |
+| `Panel` | GUI | Smart layout engine adapted for larger 3D shapes. |
+
+---
+
+## 📝 Input Format (v2.0)
+
+The system now supports 4 shapes. Ensure `Cone` has **two** parameters (Radius, Height).
 
 ```text
-Circle 50
+4
+Sphere 60
 Cube 100
-Circle 75
-Cube 60
+Cone 50 120
+Sphere 75
 ```
 ---
 
 ## 🔮 Future Improvements
-1.  **Add support for more shapes (Triangles, Rectangles).**
-  
-2.  **Implement color customization for each shape.**
-    
-3.  **Database integration for saving shape history.**
+
+- [ ] **Interactive Toolbar:** Add a GUI side-panel to allow users to add/remove shapes dynamically at runtime without editing the text file.
+- [ ] **Design Pattern Integration:** Refactor the shape creation logic to implement the **Factory Design Pattern** for cleaner and more scalable code.
+- [ ] **Data Persistence:** Implement **JSON or XML serialization** to save and load drawing sessions (exporting the current state).
+- [ ] **Sorting Algorithms:** Add functionality to sort displayed shapes by Area or Volume (Ascending/Descending).
+- [ ] **Z-Axis Management:** Implement a layering system to handle overlapping shapes (bring to front/send to back).
 
 ---
 
