@@ -45,6 +45,8 @@ Cone 50 120
 Sphere 75
 ```
 ---
+## 📸 Screenshots
+<img width="1920" height="1171" alt="Screenshot from 2025-12-24 21-25-28" src="https://github.com/user-attachments/assets/153f3c59-8547-4933-ab53-92833179ad7a" />
 
 ## 🔮 Future Improvements
 
